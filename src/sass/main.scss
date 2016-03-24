@@ -1,1 +1,18 @@
 /* CSS Entry Point */
+
+html{
+	background: url('../images/Tatooine.png') no-repeat fixed;
+	background-size: 100%;
+}
+
+.laser_green {
+	border: 1 px solid #8AF808;
+	width: 15px;
+	position: absolute;
+}
+
+.laser_red {
+	border: 1 px solid #FC4903;
+	width: 15px;
+	position: absolute;
+}
