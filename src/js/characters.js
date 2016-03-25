@@ -1,4 +1,4 @@
-import {GAME_WIDTH, GAME_HEIGHT} from './game_data';
+// import {GAME_WIDTH, GAME_HEIGHT} from './game_data';
 
 
 var LUKE = '../images/Luke_Skywalker.png';
