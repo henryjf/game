@@ -1,7 +1,7 @@
 /* CSS Entry Point */
 
 html{
-	background: url('../images/Tatooine1.png') no-repeat fixed;
+	background: url('../images/Deathstar1.png') no-repeat fixed;
 	background-size: 100%;
 }
 
@@ -13,11 +13,19 @@ html{
 }
 
 .jedi img { 
-	width: 120px;
+	width: 150px;
+	// position: absolute;
+	// &.left {
+ //    transform: rotateY(0deg);
+ //  }
+
+  // &.right {
+    transform: rotateY(180deg);
+  // }
 }
 
 .sith img {
-	width: 200px;
+	width: 250px;
 }
 
 // .laser_green {
