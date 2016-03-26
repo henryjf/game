@@ -1,13 +1,14 @@
 //Javascript Entry Point
 import $ from 'jquery';
+import _ from 'lodash';
 // import Character from './character';
 var fighters = [
 	{
-	name:'luke',
+	name:'Luke',
 	url: "../images/Luke_Skywalker_jedi.png"
 },
 	{
-	name:'vader',
+	name:'Vader',
 	url:"../images/Darth_Vader.png"
 	}
 ]
@@ -28,6 +29,16 @@ function status(msg) {
 
 setFighters(fighters[0], fighters[1]);
 status('Fight!');
+
+setTimeout(function() {
+	var winner = _.sample(fighters);
+
+	status(`${winner.name} is the winner!`);
+}, 5000);
+
+
+
+
 // luke.setSrc('../images/Luke_Skywalker.png');
 
 // $('.tatooine').append(luke.image);
