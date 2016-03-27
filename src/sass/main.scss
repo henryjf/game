@@ -1,46 +1,54 @@
 /* CSS Entry Point */
-
 html{
-	background: url('../images/Tatooine1.png') no-repeat fixed;
+	background: url('../images/Deathstar.png') no-repeat fixed;
 	background-size: 1250px;
 }
 
-.arena {
-	width: 1000px;
-	height: 500px;
+body {
+
+	.blaster {
+		width: 1px;
+		height: 1px;
+		// border-radius: 5px;
+		background: red;
+		position: absolute;
+		transition: background 0.2s;
+	}
+	// .shootingStar {
+	// 	background: green;
+	// }
+}
+
+	.arena {
+	width: 1200px;
+	height: 600px;
 	justify-content: center;
 	display: flex;
 	font-size: 28px;
+	color: white;
 	align-items: flex-end;
+	margin-bottom: 30px;
 }
 
 .jedi img { 
-	width: 150px;
-	// display: flex;
-	// justify-content: center;
-	// align-items: flex-end;
-	// position: absolute;
-	// &.left {
- //    transform: rotateY(0deg);
- //  }
-
-  // &.right {
+	width: 175px;
+	
     transform: rotateY(180deg);
-  // }
+ 
 }
 
 .sith img {
-	width: 250px;
+	width: 325px;
 }
 
-// .laser_green {
-// 	border: 1 px solid #8AF808;
-// 	width: 15px;
-// 	position: absolute;
-// }
+.status{ 
+color: white;
+display: flex;
+align-items: flex-start;
+justify-content: center;
 
-// .laser_red {
-// 	border: 1 px solid #FC4903;
-// 	width: 15px;
-// 	position: absolute;
-// }
+
+
+
+
+}
