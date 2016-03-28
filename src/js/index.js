@@ -3,14 +3,9 @@ import $ from 'jquery';
 import _ from 'lodash';
 import blasterFactory from './blaster_factory';
 import Laser from './laser';
-// import TwinklingStar from './twinkling_star';
 
-// import Planet from './planet';
-
-// window.star = starFactory();
 
 var lasers = new Map();
-// var twinklingStars = new Map();
 
 for( var i = 0; i <= 5; i++) {
   var blaster = blasterFactory();
@@ -30,9 +25,6 @@ for( var i = 0; i <= 5; i++) {
     lasers.set(blaster, $blaster);
   }
 
-  // if (star instanceof TwinklingStar) {
-  //   twinklingStars.set(star, $star);
-  // }
 }
 
 setInterval(() => {
@@ -42,8 +34,6 @@ setInterval(() => {
     $blaster.css({right: `${x}px`, left: `${x}px`});
   
   }
-
-
 });
 
 var fighters = [
@@ -72,12 +62,12 @@ function status(msg) {
 }
 
 setFighters(fighters[0], fighters[1]);
-status('Fight!');
+status('Lightsaber Duel!');
 
 setTimeout(function() {
   var winner = _.sample(fighters);
 
-  status(`${winner.name} is the winner!`);
+  status(`${winner.name} is the Winner!`);
 }, 5000);
 
 // setTimeout(function(){
@@ -88,20 +78,17 @@ setTimeout(function() {
 
 	setTimeout(function() {
 	$('.sith').hide();
-}, 6000);
+  }, 7000);
 
-// }, 5000); 
+  setTimeout(function() {
+    $('.jedi').hide();
+   }, 7000);
+ 
+ setTimeout(function() {
+  $(".vs").hide();
+ }, 6000);
 
-// setTimeout(() => {
 
-//   saturn.explode();
-//   $('.saturn').replaceWith(saturn.image);
-
-//   setTimeout(() => {
-//     $('.saturn').hide();
-//   }, 6000);
-
-// }, 5000);)
 
 
 

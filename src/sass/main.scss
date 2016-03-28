@@ -6,49 +6,40 @@ html{
 
 body {
 
-	.blaster {
-		width: 1px;
-		height: 1px;
-		// border-radius: 5px;
-		background: red;
-		position: absolute;
-		transition: background 0.2s;
+		.blaster {
+			width: 1px;
+			height: 1px;
+			background: red;
+			position: absolute;
+			transition: background 0.2s;
 	}
-	// .shootingStar {
-	// 	background: green;
-	// }
-}
 
 	.arena {
-	width: 1200px;
-	height: 600px;
-	justify-content: center;
-	display: flex;
-	font-size: 28px;
-	color: white;
-	align-items: flex-end;
-	margin-bottom: 30px;
-}
+		width: 1200px;
+		height: 600px;
+		justify-content: center;
+		display: flex;
+		font-size: 28px;
+		color: white;
+		align-items: flex-end;
+		margin-bottom: 30px;
+	}
 
-.jedi img { 
-	width: 175px;
-	
-    transform: rotateY(180deg);
+	.jedi img { 
+		width: 175px;
+	    transform: rotateY(180deg);
  
-}
+	}
 
-.sith img {
-	width: 325px;
-}
+	.sith img {
+		width: 325px;
+	}
 
-.status{ 
-color: white;
-display: flex;
-align-items: flex-start;
-justify-content: center;
+	.status{ 
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-
-
-
-
-}
+}	
